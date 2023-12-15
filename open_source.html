@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<?php
+session_start();
+
+// Check if user is logged in. If not, set default values.
+if (!isset($_SESSION['login']) || $_SESSION['login'] != 1) {
+    $_SESSION['login'] = 0;
+    $_SESSION['username'] = "login";
+}
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="style1.css"/>
+    <meta name="description" content="Main page with all informations about the website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Main informational page</title>
+</head>
+<body>
+    <!-- Top nav bar with external css -->
+    <div class="topnav">
+   	 <a href="Main_information_page.php">Info Page</a>
+   	 <a class="active" href="open_source.html">Open source</a>
+     	 
+   	 </div>
+    <!--informations about the website -->
+    <div style= "padding-left:20%;padding-right:20%">
+   	 
+   	 <!--pharagraph and headers -->
+   	 <h2>Understanding Open Source</h2>
+   		 
+   	 <p>    
+Open source is a term that describes computer software or other products with source code that can be viewed, modified, and distributed by anyone. Originating from the software development industry, it represents a shift from traditional proprietary software where source code is kept secret and the software is sold as a product. In contrast, open source software is often developed in a collaborative public manner and freely shared with users. This approach has led to the development of significant software, including the Linux operating system, the Apache web server, and the Mozilla Firefox browser.
+   	 </p>
+   	 <h2>Advantages of Open Source</h2>
+   	 <p>
+One of the primary advantages of open source software is its potential for reliability and security. With many developers examining and testing the code, bugs and vulnerabilities can be identified and fixed rapidly. Open source software also offers flexibility and freedom from vendor lock-in, as users are not dependent on a single company for updates or licenses. Additionally, it often leads to reduced costs since the software is usually available for free, and businesses can customize the software for their specific needs without incurring additional licensing fees.
+   	 <h2>Challenges and Considerations</h2>
+   	 <p>
+Despite its advantages, open source software comes with its own set of challenges. For instance, since it often lacks dedicated customer support, users may rely on community support, which can vary in responsiveness and expertise. The quality of open source software can also be inconsistent, as it largely depends on the community's size and activity. Furthermore, for businesses, integrating open source software into existing systems and ensuring it meets specific requirements can be complex and resource-intensive.
+   	 </p>    
+   	 <h2>The Future of Open Source</h2>
+   	 <p>
+The future of open source looks promising as it continues to influence not only the software industry but also other sectors like education, government, and healthcare. With an increasing emphasis on transparency, collaboration, and community-driven development, open source principles are being adopted more widely. This trend is facilitated by the proliferation of online platforms like GitHub and GitLab, which make it easier for developers to collaborate, share code, and contribute to open source projects.
+   	 </p>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+   	 <p class="footer-P">Author: Mateusz Truszkowski<br/>
+   	 <a href="mailto:mateusz.truszkowski11@gmail.com">EMAIL: mateusz.truszkowski11@gmail.com</a></p>
+    </div>
+</body>
+</html>
+
